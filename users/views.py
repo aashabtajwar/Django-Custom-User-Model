@@ -3,6 +3,8 @@ from django.contrib import messages
 from .forms import CustomUserCreationForm
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 # Create your views here.
 
 def home(request):
